@@ -1,0 +1,59 @@
+Microsoft Windows [Version 10.0.19044.1288]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\karth>cd
+C:\Users\karth
+
+C:\Users\karth>cd Desktop
+
+C:\Users\karth\Desktop>cd Story
+
+C:\Users\karth\Desktop\Story>start chapter1.txt
+
+C:\Users\karth\Desktop\Story>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   chapter3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\karth\Desktop\Story>git diff chapter3.txt
+diff --git a/chapter3.txt b/chapter3.txt
+index 5ea861c..b903343 100644
+Binary files a/chapter3.txt and b/chapter3.txt differ
+
+C:\Users\karth\Desktop\Story>git checkout chapter3.txt
+Updated 1 path from the index
+
+C:\Users\karth\Desktop\Story>start chapter3.txt
+
+C:\Users\karth\Desktop\Story>git log
+commit 6e5085e236a37f8921f1a1d5911d33d98071ba90 (HEAD -> master)
+Author: Karthee <kartheeswaran1707v@gmail.com>
+Date:   Wed Dec 29 13:04:58 2021 +0530
+
+    Complete chapter 2 and 3
+
+commit 75d130e2bfc502f9858b778320c419c781f0f825
+Author: Karthee <kartheeswaran1707v@gmail.com>
+Date:   Wed Dec 29 12:59:43 2021 +0530
+
+    Complete chapter 1
+
+C:\Users\karth\Desktop\Story>git remote add origin https://github.com/kartheeswaran07v/Story.git
+
+C:\Users\karth\Desktop\Story>git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 695 bytes | 347.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/kartheeswaran07v/Story.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\Users\karth\Desktop\Story>
